@@ -2,10 +2,12 @@
   <div>
     <TodoForm 
       v-bind:addTodo="addTodo"
+      v-bind:todos="todos"
     />
  
     <TodoList 
       v-bind:todos="todos"
+      v-bind:deleteItem="deleteItem"
     />
   </div>
 </template>
@@ -18,6 +20,11 @@ export default {
   components: {
     TodoList,
     TodoForm,
+  },
+  methods: {
+    deleteItem(event) {
+      console.log(event);
+    }
   }
 }
 </script>

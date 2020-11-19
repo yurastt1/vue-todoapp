@@ -2,6 +2,8 @@
   <button 
     type="submit"
     value="Submit"
+    v-bind="title"
+    :disabled="!!title"
   >
      add task
   </button>

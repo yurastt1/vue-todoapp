@@ -1,15 +1,9 @@
 <template>
-  <li>{{ todo.title }}</li>
+  <li v-on:dblclick="deleteItem">{{ todo.title }}</li>
 </template>
 
 <script>
 export default {
-  props: {
-    todo: {
-      title: String,
-      id: Number,
-      completed: Boolean,
-    }
-  },
+  props: ['todo', 'deleteItem'],
 }
 </script>
