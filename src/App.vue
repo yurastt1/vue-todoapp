@@ -22,8 +22,6 @@ export default {
   methods: {
     addTodo(todo) {
       this.todos = [...this.todos, todo]
-      alert("Hello! I am an alert box!!");
-      console.log(',mama');
     },
   }
 }

@@ -1,23 +1,24 @@
 <template>
   <div>
+    <TodoForm 
+      v-bind:addTodo="addTodo"
+    />
 
     <TodoList 
       v-bind:todos="todos"
-    />
-    <AddTodoButton 
-      v-bind:addTodo="addTodo"
     />
   </div>
 </template>
 
 <script>
+import TodoForm from './TodoForm'
 import TodoList from './TodoList'
-import AddTodoButton from './AddTodoButton'
 export default {
   props: ['todos', 'addTodo'],
   components: {
     TodoList,
-    AddTodoButton,
+    TodoForm,
   }
 }
+
 </script>
