@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      todos: [{id: 1, title: 'mama', status: 'completed'}, {id: 2, title: 'pups', status: 'completed'}]
+      todos: [{id: 1, title: 'mama', completed: true}, {id: 2, title: 'pups', completed: false}]
     }
   },
   methods: {

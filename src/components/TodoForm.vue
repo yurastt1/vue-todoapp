@@ -1,9 +1,7 @@
 <template>
   <form @submit.prevent="onSubmit">
     <Input />
-    <AddTodoButton 
-      v-bind:addTodo="addTodo"
-    />
+    <AddTodoButton />
   </form>
 </template>
 
@@ -16,6 +14,18 @@ export default {
   components: {
     AddTodoButton,
     Input,
+  },
+   data() {
+    return {
+      
+    }
+  },
+    methods: {
+    onSubmit() {
+      const todo={id: 3, title: 'sex', status: 'completed'}
+      this.addTodo(todo)
+
+    }
   }
 }
 </script>

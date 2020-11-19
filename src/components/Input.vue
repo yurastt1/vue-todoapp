@@ -1,3 +1,4 @@
 <template>
-  <input v-model="title" />
+  <input id="title" v-model="title" />
 </template>
+

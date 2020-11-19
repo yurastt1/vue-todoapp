@@ -3,7 +3,7 @@
     <TodoForm 
       v-bind:addTodo="addTodo"
     />
-
+ 
     <TodoList 
       v-bind:todos="todos"
     />
@@ -20,5 +20,4 @@ export default {
     TodoForm,
   }
 }
-
 </script>
