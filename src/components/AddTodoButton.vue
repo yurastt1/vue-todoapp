@@ -3,7 +3,14 @@
     type="submit"
     value="Submit"
   >
-    add todo
+     add task
   </button>
 </template>
+
+<script>
+export default {
+  props: ['title']
+}
+</script>
+
 
