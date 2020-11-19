@@ -1,5 +1,9 @@
 <template>
-  <li v-on:dblclick="deleteItem">{{ todo.title }}</li>
+  <li v-on:dblclick="deleteItem(todo.title)"
+
+  >
+    {{ todo.title }}
+  </li>
 </template>
 
 <script>

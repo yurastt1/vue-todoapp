@@ -8,6 +8,7 @@
     >add task </button>
     <span v-if="errorByLength">Максимальна довжина пункту - 30 символів</span>
     <span v-if="errorIsAdded">Вже додано</span>
+    <span v-if="errorIsAdded">Успішно видалено</span>
   </form>
 </template>
 
@@ -41,7 +42,7 @@ export default {
         setTimeout(() =>  this.errorIsAdded = false, 5000);
         return
       }
-      console.log(this.todos);
+
       const todo={id: 3, title: this.title, status: 'completed'}
       this.addTodo(todo)
 

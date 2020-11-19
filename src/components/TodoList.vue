@@ -4,7 +4,6 @@
       v-for="(todo, index) in todos" :key="index"
       v-bind:todo="todo"
       v-bind:deleteItem="deleteItem"
-      
     />
   </ul>
 </template>
