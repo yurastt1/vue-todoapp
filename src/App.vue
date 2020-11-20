@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <TodoApp 
-    />
+    <TodoApp />
   </div>
 </template>
 
@@ -12,15 +11,5 @@ export default {
   components: {
     TodoApp
   },
- 
-  // methods: {
-  //   addTodo(todo) {
-  //     this.todos = [...this.todos, todo]
-  //   },
-  //   deleteItem(item) {
-  //     const deleteItemIndex = this.todos.findIndex(element => element.title === item)
-  //     this.todos.splice(deleteItemIndex, 1);
-  //   }
-  // }
 }
 </script>
