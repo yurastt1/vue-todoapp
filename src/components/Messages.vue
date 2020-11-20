@@ -1,7 +1,7 @@
 <template>
-  <p>
-    <span v-if="errorByLength">Максимальна довжина пункту - 30 символів</span><br>
-    <span v-if="errorIsAdded">Вже додано</span><br>
+  <p class="messages">
+    <span v-if="errorByLength">Максимальна довжина пункту - 30 символів</span>
+    <span v-if="errorIsAdded">Вже додано</span>
     <span v-if="itemDeletedMessage">Успішно видалено</span>
   </p>
 </template>
@@ -11,3 +11,10 @@ export default {
   props: ['errorByLength', 'errorIsAdded', 'itemDeletedMessage'],
 }
 </script>
+
+
+<style lang="scss">
+  .messages {
+    background-color: blue;
+  }
+</style>

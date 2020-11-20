@@ -63,8 +63,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  .section {
-    display: flex;
-  }
-</style>
+
