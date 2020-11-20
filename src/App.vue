@@ -11,5 +11,5 @@ export default {
   components: {
     TodoApp
   },
-}
+};
 </script>

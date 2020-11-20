@@ -22,9 +22,11 @@ export default {
     methods: {
       onSubmit() {
         this.$emit('addtodo', this.title) 
-
+        if (this.title.length > 30) {
+          return
+        }
         this.title = ''
       },
-  }
+  },
 }
 </script>

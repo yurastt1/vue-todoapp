@@ -1,6 +1,7 @@
 <template>
   <div>
-    <TodoForm 
+    <div class="section">
+      <TodoForm 
       @addtodo="addtodo"
       v-bind:todos="todos"
     />
@@ -9,6 +10,8 @@
       v-bind:errorIsAdded="errorIsAdded"
       v-bind:itemDeletedMessage="itemDeletedMessage"
     />
+    </div>
+
  
     <TodoList 
       v-bind:todos="todos"
@@ -47,7 +50,7 @@ export default {
         setTimeout(() =>  this.errorIsAdded = false, 5000);
         return
       }
-      this.todos.push({id: 3, title: todoTitle, status: 'completed'});
+      this.todos.push({id: Date.now(), title: todoTitle});
     },
 
     deleteItem(item) {
@@ -59,3 +62,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .section {
+    display: flex;
+  }
+</style>

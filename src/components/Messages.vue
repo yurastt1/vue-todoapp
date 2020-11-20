@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <span v-if="errorByLength">Максимальна довжина пункту - 30 символів</span>
-    <span v-if="errorIsAdded">Вже додано</span>
+  <p>
+    <span v-if="errorByLength">Максимальна довжина пункту - 30 символів</span><br>
+    <span v-if="errorIsAdded">Вже додано</span><br>
     <span v-if="itemDeletedMessage">Успішно видалено</span>
-  </div>
+  </p>
 </template>
 
 <script>
 export default {
-  props: ['errorByLength', 'errorIsAdded', 'itemDeletedMessage']
+  props: ['errorByLength', 'errorIsAdded', 'itemDeletedMessage'],
 }
 </script>
