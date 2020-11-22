@@ -1,24 +1,17 @@
 # vue-todoapp
+In this app you can add todo to the list via input and submit button
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### To start project locally
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The button will be inactive if there’s no input
+If your input already in todolist, you will get a message about it, and input will not be cleared and todo don't be added
+if input length longer then 30 symbols you will get a message about it, and input will not be cleared and todo don't be added
+You can also double click on todo to delete it from the list
